@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Home-TaskMate</title>
+{% endblock title %}
+
+{% block content %}
+    <div class = 'container'>
+        <div class="row mt-3">
+              <div class="col-lg-4">
+                <img src="{% static 'images/index1.jpg' %}" class="rounded float-start" alt="index1" width="360" height="200">
+              </div>
+              <div class="col-lg-4">
+                <img src="{% static 'images/index2.jpg' %}" class="rounded float-end" alt="index2" width="360" height="200">
+              </div>
+              <div  class="col-lg-4">
+                <img src="{% static 'images/index3.jpg' %}" class="rounded float-end" alt="index3" width="360" height="200">
+              </div>
+          </div>
+
+        <div class="row mt-3">
+            <div class="col-md-6 offset-md-3">
+                <center><p class='h1'>Quick and Easy to use</p></center>
+                <center><p class='h2'>Plan your day better</p></center>
+                <center><p class='h3'>Be 1% better everyday</p></center>
+                <center><a href="{% url 'todolist' %}"><button type="button" class="btn btn-outline-success">Let's Get Started</button></a></center>
+                
+            </div>
+        </div>
+    </div>
+{% endblock content %}
